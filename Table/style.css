@@ -1,0 +1,18 @@
+table {
+    width: 50%;
+    height: 50%;
+}
+
+table, th, td {
+    border: 2px solid grey;
+    border-collapse: collapse;
+}
+
+tr::after {
+    content: '\00a0';
+    display: table-cell;
+    padding: 0.3em 0;
+    border-right-style: hidden;
+    border-bottom-style: hidden;
+    border-top-style: hidden;
+}
