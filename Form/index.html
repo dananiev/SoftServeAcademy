@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href="style.css">
+    <title>Form</title>
+</head>
+<body>
+
+    <div class='container'>
+        <div class='header'>
+            <h1>Pizza Shop 2.0</h1>
+        </div>    
+        <form>
+            <fieldset>
+                <div class='labels'>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="First Name" required>
+                </div>
+
+                <div class='labels'>
+                    <label>Pizza Topping</label>
+                    <input type="radio" name="pizza_topping" value='supreme'>Supreme
+                    <input type='radio' name='pizza_topping' value='vegetarian'>Vegetarian
+                    <input type='radio' name='pizza_topping' value='hawaiian'>Hawaiian
+                </div>
+
+                <div class='labels'>
+                    <label>Pizza Sauce</label>
+                    <select name='pizzaSauce'>
+                        <option value='tomato'>Tomato</option>
+                        <option value='garlicRanch'>Garlic Ranch</option>
+                        <option value='bechamel'>Bechamel</option>
+                        <option value='marinara'>Marinara</option>
+                        <option value='buffalo'>Buffalo</option>
+                        <option value='pesto'>Pesto</option>
+                    </select>
+                </div>
+
+                <div class='labels'>
+                    <label>Optional Extras</label>
+                    <input type='checkbox' name='extra_cheese'>Extra Cheese
+                    <input type='checkbox' name='gluten_free_base'>Gluten Free Base
+                </div>
+
+                <div>
+                    <label for='deliveryInstructions'>Delivery Instructions:</label>
+                    <div>
+                        <textarea name='deliveryInstructions' placeholder="Delivery Instructions" required></textarea>
+                    </div>
+                </div>
+
+                <div class='labels'>
+                    <button type='submit'>Send my Order</button>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
