@@ -103,14 +103,12 @@ section {
 }
 
 article {
-    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
 article .text-container {
-    position: relative;
     width: 48%;
 }
 
@@ -122,7 +120,6 @@ article .text-container {
 }
 
 article .image-container {
-    position: relative;
     width: 48%;
 }
 
@@ -189,7 +186,6 @@ article .image-container .image img {
 .academics .content {
     display: flex;
     justify-content: center;
-    flex-direction: row-reverse;
     flex-wrap: wrap;
     margin-top: 40px;
 }   
@@ -251,7 +247,6 @@ article .image-container .image img {
 .slide {
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
 }
 
 .slide1 {
@@ -266,7 +261,7 @@ article .image-container .image img {
     text-align: center;
 }
 
-.slide-content span {
+.slide-content p {
     font-size: 30px;
     color: #fff;
 }
@@ -311,7 +306,6 @@ article .image-container .image img {
     height: 100vh;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .contact-in {
@@ -322,7 +316,6 @@ article .image-container .image img {
 .contact-in:nth-child(1) {
     flex: 30%;
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('Images/contact-info-background.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
 }
