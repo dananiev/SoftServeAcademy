@@ -190,20 +190,20 @@ article .image-container .image img {
     margin-top: 40px;
 }   
 
-.academics .content .box {
+.academics .content .academics-container {
     width: 340px;
     margin: 20px;
     border: 15px solid #fff;
     box-shadow: 0 5px 35px rgba(0,0,0,0.08);
 }
 
-.academics .content .box .image {
+.academics .content .academics-container .image {
     position: relative;
     width: 100%;
     height: 300px;
 }
 
-.academics .content .box .image img {
+.academics .content .academics-container .image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -212,11 +212,11 @@ article .image-container .image img {
     object-fit: cover;
 }
 
-.academics .content .box .text {
+.academics .content .academics-container .text {
     padding: 15px 0 5px;
 }
 
-.academics .content .box .text h3 {
+.academics .content .academics-container .text h3 {
     font-weight: 400;
     color: #111;
 }
