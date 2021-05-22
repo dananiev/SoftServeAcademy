@@ -23,7 +23,6 @@ readMoreBtn.addEventListener('click', (e) => {
 
 
 
-
 // Gallery Slider Function
 let sliderImages = document.querySelectorAll(".slide"),
   arrowLeft = document.querySelector("#arrow-left"),
@@ -78,10 +77,52 @@ startSlide();
 
 
 
-
 // Show Scroll Top Function
 const btnScrollToTop = document.querySelector('#btnScrollToTop');
 
 btnScrollToTop.addEventListener('click', () => {
     $("html, body").animate({ scrollTop: 0 }, "slow");
+})
+
+
+
+
+// Home Page Text Animation
+const textAnimation = document.querySelector(".text-animation");
+const strTextAnimation = textAnimation.textContent;
+const splitTextAnimation = strTextAnimation.split("");
+
+textAnimation.textContent = "";
+
+for (let i = 0; i < splitTextAnimation.length; i++) {
+  textAnimation.innerHTML += "<span>" + splitTextAnimation[i] +  "</span>";
+}
+
+let char = 0;
+let timer = setInterval(textFade, 50);
+
+function textFade() {
+  const span = textAnimation.querySelectorAll('span')[char];
+  span.classList.add('fade');
+  char++;
+
+  if (char === splitTextAnimation.length) {
+    complete();
+    return;
+  }
+}
+
+function complete() {
+  clearInterval(timer);
+  timer = null;
+}
+
+
+
+// Light/Dark Toggle Button
+const checkbox = document.getElementById('checkbox');
+const aboutPage = document.getElementById('about');
+
+checkbox.addEventListener('change', () => {
+    aboutPage.classList.toggle('dark');
 })
