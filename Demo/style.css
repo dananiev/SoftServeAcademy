@@ -59,9 +59,17 @@ header .nav li a {
     color: #fff;
 }
 
-header .nav li a:hover {
-    color: #f05123;
+header .nav li.active {
+    background-color: #f05123;
+    transition: 0.2s ease;
+    padding: 3px 12px;
+    border-radius: 2px;
 }
+
+header .nav li.active:hover {
+    background-color: #c52b00;
+}
+
 
 
 
@@ -187,19 +195,20 @@ article .text-container {
     font-size: 30px;
     font-weight: 300;
     margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 article .image-container {
     width: 48%;
 }
 
-article .image-container .image {
+article .image-container .image-about-us {
     position: relative;
     width: 100%;
     height: 100%;
 }
 
-article .image-container .image img {
+article .image-container .image-about-us img {
     position: absolute;
     top: 0;
     left: 0;
@@ -253,27 +262,83 @@ article .image-container .image img {
     text-align: center;
 }
 
-.academics .content {
+.content-academics {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 40px;
+    justify-content: center;
+    perspective: 700px;
 }   
 
-.academics .content .academics-container {
+.academics-container {
     width: 340px;
-    margin: 20px;
+    margin: 10px;
     border: 15px solid #fff;
     box-shadow: 0 5px 35px rgba(0,0,0,0.08);
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
-.academics .content .academics-container .image {
+.academics-container .image,
+.academics-container .text {
+    backface-visibility: hidden;
+}
+
+.academics-container .text {
+    transform: rotateY(180deg);
+}
+
+.advertising,
+.entertainment-design,
+.environmental-design,
+.film,
+.fine-art,
+.graphic-design,
+.illustration,
+.interaction-design,
+.photography,
+.product-design,
+.transportation-design {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#advertising.flipping,
+#entertainment-design.flipping,
+#environmental-design.flipping,
+#film.flipping,
+#fine-art.flipping,
+#graphic-design.flipping,
+#illustration.flipping,
+#interaction-design.flipping,
+#photography.flipping,
+#product-design.flipping,
+#transportation-design.flipping {
+    transform: rotateY(180deg);
+}
+
+.academics-container.flipping .advertising,
+.academics-container.flipping .entertainment-design,
+.academics-container.flipping .environmental-design,
+.academics-container.flipping .film,
+.academics-container.flipping .fine-art,
+.academics-container.flipping .graphic-design,
+.academics-container.flipping .illustration,
+.academics-container.flipping .interaction-design,
+.academics-container.flipping .photography,
+.academics-container.flipping .product-design,
+.academics-container.flipping .transportation-design,
+.academics-container.flipping .image {
+    display: none;
+}
+
+.academics .content-academics .academics-container .image {
     position: relative;
     width: 100%;
     height: 300px;
 }
 
-.academics .content .academics-container .image img {
+.academics .content-academics .academics-container .image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -282,16 +347,21 @@ article .image-container .image img {
     object-fit: cover;
 }
 
-.academics .content .academics-container .text {
-    padding: 15px 0 5px;
+.academics .content-academics .academics-container .text {
+    text-align: center;
+    position: absolute;
+    top: 0;
 }
 
-.academics .content .academics-container .text h3 {
-    font-weight: 400;
-    color: #111;
+.academics .content-academics .academics-container .text h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-
+.academics .content-academics .academics-container .text p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
 
 
 /* GALLERY SLIDER PAGE  */
@@ -369,7 +439,7 @@ article .image-container .image img {
 
 .slide-content p {
     font-size: 50px;
-    color: #f05123
+    color: #fff
 }
 
 .arrow {
@@ -386,24 +456,24 @@ article .image-container .image img {
     left: 0;
     margin-left: 30px;
     border-width: 20px 30px 20px 0;
-    border-color: transparent #f05123 transparent transparent;
+    border-color: transparent #fff transparent transparent;
     transition: 0.4s;
 }
 
 #arrow-left:hover {
-    border-color: transparent #e99e89 transparent transparent;
+    border-color: transparent #f05123 transparent transparent;
 }
 
 #arrow-right {
     right: 0;
     margin-right: 30px;
     border-width: 20px 0 20px 30px;
-    border-color: transparent transparent transparent #f05123;
+    border-color: transparent transparent transparent #fff;
     transition: 0.4s;
 }
 
 #arrow-right:hover {
-    border-color: transparent transparent transparent #e99e89;
+    border-color: transparent transparent transparent #f05123;
 }
 
 
@@ -518,7 +588,7 @@ article .image-container .image img {
     outline: none;
     background: transparent;
     padding-left: 5px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     color: #fff;
 }
@@ -536,12 +606,22 @@ article .image-container .image img {
     background: transparent;
     padding-top: 5px;
     padding-left: 5px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
+    color: #fff;
 }
 
 .contact-in-textarea::placeholder {
     color: #fff;
+}
+
+#count-remaining-characters {
+    color: #fff;
+    text-align: right;
+    margin-top: -20px;
+    font-size: 14px;
+    font-weight: 300px;
+    letter-spacing: .8px;
 }
 
 .contact-in-btn {
@@ -551,10 +631,11 @@ article .image-container .image img {
     outline: none;
     background: transparent;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
     cursor: pointer;
     transition: 0.5s;
+    letter-spacing: .5px;
 }
 
 .contact-in-btn:hover {

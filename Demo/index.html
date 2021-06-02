@@ -15,18 +15,18 @@
     <header>
         <p id='logo'>ArtCenter</p>
         <ul class='nav'>
-            <li><a href='#home'>Home</a></li>
-            <li><a href='#about'>About</a></li>
-            <li><a href='#academics'>Academics</a></li>
-            <li><a href='#gallerySlider'>Gallery</a></li>
-            <li><a href='#contact'>Contact</a></li>
+            <li class='li-home'><a href='#li-home'>Home</a></li>
+            <li class='li-about'><a href='#li-about'>About</a></li>
+            <li class='li-academics'><a href='#li-academics'>Academics</a></li>
+            <li class='li-gallerySlider'><a href='#li-gallerySlider'>Gallery</a></li>
+            <li class='li-contact'><a href='#li-contact'>Contact</a></li>
         </ul>
     </header>
 
 
 
     <!-- HOME PAGE -->
-    <section class='home' id='home'>
+    <section class='home' id='li-home'>
         <div class='content'>
             <h2 class='text-animation'>Design Your Creative Future</h2>
             <p>
@@ -42,7 +42,7 @@
 
 
     <!-- ABOUT PAGE -->
-    <section class='about' id='about'>
+    <section class='about' id='li-about'>
         <input type='checkbox' class='checkbox' id='checkbox'>
         <label for='checkbox' class='label'>
             <i class='fas fa-moon'></i>
@@ -69,7 +69,7 @@
                 <button class='readMoreBtn'>Read More</button>
             </div>
             <div class='image-container'>
-                <div class='image'>
+                <div class='image-about-us'>
                     <img src='Images/about-us.jpg'>
                 </div>
             </div>
@@ -79,98 +79,142 @@
 
 
     <!-- ACADEMICS PAGE -->
-    <section class='academics' id='academics'>
+    <section class='academics' id='li-academics'>
         <article class='title'>
             <h2 class='titleText'>Academics</h2>
             <p>ArtCenter offers 11 undergraduate degrees equipping students with the latest tools and techniques necessary to thrive in today’s creative landscape.</p>
         </article>
-        <div class='content'>
-            <div class='academics-container'>
+        
+        <div class='content-academics'>
+            <div class='academics-container' id='advertising'>
                 <div class='image'>
-                    <img src='Images/advertising.jpg'>
+                    <img src='Images/advertising.jpg' class='img'>
                 </div>
+                <h3 class='advertising'>Advertising</h3>
                 <div class='text'>
                     <h3>Advertising</h3>
+                    <p>
+                        Our program will prepare you to create content in all of the most relevant and contemporary forms of media, as well as to master new technologies and emerg­ing platforms.
+                        Beginning classes leave you visually and verbally fluent in the languages of communica­tion—including film, video, photography, graphic and interaction design, social media, digital engagement and app conception.
+                    </p>
                 </div>
             </div>
-            <div class='academics-container'>
+            <div class='academics-container' id='entertainment-design'>
                 <div class='image'>
-                    <img src='Images/entertainmentDesign.jpg'>
+                    <img src='Images/entertainmentDesign.jpg' class='img'>
                 </div>
+                <h3 class='entertainment-design'>Entertainment Design</h3>
                 <div class='text'>
                     <h3>Entertainment Design</h3>
+                    <p>
+                        A successful career in Entertainment Design requires a fertile imagination, an understanding of the technological tools used to invent new realities and the ability to conceptualize within the parameters of a given story.
+                        Our alumni work in the fields of animation, video games, theme park design, film and television.
+                        Our department offers three tracks: Concept Design, Animation and Game Design.
+                    </p>
                 </div>
             </div>
-            <div class='academics-container'>
+            <div class='academics-container' id='environmental-design'>
                 <div class='image'>
-                    <img src='Images/environmentalDesign.jpg'>
+                    <img src='Images/environmentalDesign.jpg' class='img'>
                 </div>
+                <h3 class='environmental-design'>Environmental Design</h3>
                 <div class='text'>
                     <h3>Environmental Design</h3>
+                    <p>               
+                        Environmental Design fuses elements of architecture, interior design and furniture design to focus on the total spatial experience.
+                        We pursue a global approach to industry-driven design that investigates every aspect of where and how people live, work and play.
+                        Our students seek to make an impact designing projects ranging from branded retail, theme-driven dining to new hospitality, exhibition and residential design.
+                    </p>
                 </div>
             </div>
-            <div class='academics-container'>
+            <div class='academics-container' id='film'>
                 <div class='image'>
-                    <img src='Images/film.jpg'>
+                    <img src='Images/film.jpg' class='img'>
                 </div>
+                <h3 class='film'>Film</h3>
                 <div class='text'>
                     <h3>Film</h3>
+                    <p>                    
+                        In an evolving industry, one constant remains: Filmmakers must be strong visual and narrative storytellers.
+                        Students receive a strong foundational instruction in all aspects of storytelling for screens big and small. 
+                        They then choose a specific track: cinematography, editing or directing. 
+                        Upon completing the program, graduates will have had the opportunity to write and direct a film and develop a reel of individual work.
+                    </p>
                 </div>
             </div>
-            <div class='academics-container'>
+            <div class='academics-container' id='fine-art'>
                 <div class='image'>
-                    <img src='Images/fineArt.jpg'>
+                    <img src='Images/fineArt.jpg' class='img'>
                 </div>
+                <h3 class='fine-art'>Fine Art</h3>
                 <div class='text'>
                     <h3>Fine Art</h3>
+                    <p>
+                        ArtCenter Fine Art students become equipped with the rigorous foundational skills they need to be highly adaptable visual problem-solvers who learn to pay particular attention to aesthetics and conceptual dexterity.
+                        We foster a healthy fearlessness—experimentation, risk and complexity are embedded into the very fabric of student work. 
+                    </p>
                 </div>
             </div>
-            <div class='academics-container'>
+            <div class='academics-container' id='graphic-design'>
                 <div class='image'>
-                    <img src='Images/graphicDesign.jpg'>
+                    <img src='Images/graphicDesign.jpg' class='img'>
                 </div>
+                <h3 class='graphic-design'>Graphic Design</h3>
                 <div class='text'>
                     <h3>Graphic Design</h3>
+                    <p>
+                        Our students are challenged to develop design solutions by experimenting with a wide range of media—including books and digital magazines, packaging, 3D motion graphics, apps—to create compelling graphic identities and branded experiences, guided by faculty members with expertise in print, packaging, motion, visual interaction and transmedia design. 
+                    </p>
                 </div>
             </div>
-            <div class='academics-container'>
+            <div class='academics-container' id='illustration'>
                 <div class='image'>
-                    <img src='Images/illustration.jpg'>
+                    <img src='Images/illustration.jpg' class='img'>
                 </div>
+                <h3 class='illustration'>Illustration</h3>
                 <div class='text'>
                     <h3>Illustration</h3>
+                    <p>Illustration curriculum encompasses a wide range of core studies and collaborations with other disciplines that equips students with strong practical skills, as well as substantial business knowledge. After mastering foundations skills such as figure drawing, painting and perspective, students choose specializations like: Fine Art, Entertainment Arts, Motion or Surface Design.</p>
                 </div>
             </div>
-            <div class='academics-container'>
+            <div class='academics-container' id='interaction-design'>
                 <div class='image'>
-                    <img src='Images/interactionDesign.jpg'>
+                    <img src='Images/interactionDesign.jpg' class='img'>
                 </div>
+                <h3 class='interaction-design'>Interaction Design</h3>
                 <div class='text'>
                     <h3>Interaction Design</h3>
+                    <p>Our course of study emphasizes core methods, tools and processes that prepare you to lead as new technologies emerge. Also our students focus on the user experience and study how people think, feel and behave when they use any product, environment or system. By considering human factors, cognitive sciences and psychology, students learn to design cohesive systems that can deeply impact people’s lives.</p>
                 </div>
             </div>
-            <div class='academics-container'>
+            <div class='academics-container' id='photography'>
                 <div class='image'>
-                    <img src='Images/photography.jpg'>
+                    <img src='Images/photography.jpg' class='img'>
                 </div>
+                <h3 class='photography'>Photography</h3>
                 <div class='text'>
                     <h3>Photography and Imaging</h3>
+                    <p>Our strong relationships with industry, long tradition of integrating photography with other design disciplines, and deep experience designing new technologies and applying creative solutions to social impact problems have opened professional doors for countless graduates. Here, you learn to apply the tools of photography—traditional and digital—in a personal investigation of cultural conditions.</p>
                 </div>
             </div>
-            <div class='academics-container'>
+            <div class='academics-container' id='product-design'>
                 <div class='image'>
-                    <img src='Images/productDesign.jpg'>
+                    <img src='Images/productDesign.jpg' class='img'>
                 </div>
+                <h3 class='product-design'>Product Design</h3>
                 <div class='text'>
                     <h3>Product Design</h3>
+                    <p>Product Designers improve lives by creating consumer products—from game-changing wearables to life-changing medical devices. Our curriculum emphasizes creation of consumer product designs that improve lives through a blend of functionality, relevance and sensory appeal. We develop a mindset that enables us to successfully manage innovation and risk.</p>
                 </div>
             </div>
-            <div class='academics-container'>
+            <div class='academics-container' id='transportation-design'>
                 <div class='image'>
-                    <img src='Images/transportationDesign.jpg'>
+                    <img src='Images/transportationDesign.jpg' class='img'>
                 </div>
+                <h3 class='transportation-design'>Transportation Design</h3>
                 <div class='text'>
                     <h3>Transportation Design</h3>
+                    <p>ArtCenter graduates led the teams that created the iconic cars of the 40’s and 50’s, the muscle cars of the 60’s and 70’s, supercars, family cars, and a majority of the new concept cars unveiled at major motor shows each year. Alumni contributions in transportation design also include motorcycles, mega yachts, commercial trucks, agricultural equipment, trains, aircraft, spacecraft and more.</p>
                 </div>
             </div>
         </div>
@@ -182,7 +226,7 @@
     <article class='title'>
         <h2 class='titleText'>Gallery</h2>
     </article>
-    <section class='gallerySlider' id='gallerySlider'>
+    <section class='gallerySlider' id='li-gallerySlider'>
         <div id='arrow-left' class='arrow'></div>
         <div id='slider'>
             <div class='slide slide1'>
@@ -242,7 +286,7 @@
 
 
     <!-- CONTACT PAGE -->
-    <section class='contact' id='contact'>
+    <section class='contact' id='li-contact'>
         <article class='title'>
             <h2 class='titleText' id='contactTitleText'>Contact</h2>
         </article>
@@ -273,6 +317,7 @@
                     <input type='text' placeholder='Email' class='contact-in-input'>
                     <input type='text' placeholder='Address' class='contact-in-input'>
                     <textarea placeholder='Message' class='contact-in-textarea'></textarea>
+                    <p id='count-remaining-characters'>250 characters remaining</p>
                     <input type='submit' value='SUBMIT' class='contact-in-btn'>
                 </form>
             </div>
